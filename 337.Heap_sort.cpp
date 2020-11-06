@@ -27,6 +27,9 @@ void heapsort(int arr[],int n){
         swap(arr[0],arr[i]);
         heapify(arr,0,i);
     }
+    
+    for(int i=0;i<n;i++)
+    cout<<arr[i]<<" ";
 }
 
 int main(){
@@ -39,7 +42,4 @@ int main(){
     cin>>arr[i];
 
     heapsort(arr,n);
-
-    for(int i=0;i<n;i++)
-    cout<<arr[i]<<" ";
 }
